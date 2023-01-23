@@ -1,0 +1,151 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  color: hsl(219deg, 14%, 63%);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    height: 100vh;
+  }
+}
+body main {
+  background-color: white;
+  width: 90%;
+}
+@media screen and (min-width: 768px) {
+  body main {
+    width: 700px;
+    height: 500px;
+    overflow: auto;
+  }
+}
+body main nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  gap: 10px;
+  z-index: 1;
+}
+body main nav h4 {
+  color: hsl(224deg, 21%, 14%);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body main nav h4 span {
+  background-color: hsl(224deg, 63%, 24%);
+  width: 30px;
+  height: 27px;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  float: right;
+}
+@media screen and (min-width: 768px) {
+  body main nav h4 {
+    margin-left: 5.3%;
+  }
+}
+body main nav p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: hsl(219deg, 14%, 63%);
+}
+@media screen and (min-width: 768px) {
+  body main nav p {
+    margin-right: 35px;
+  }
+}
+body main nav p:hover {
+  cursor: pointer;
+}
+body main .notification-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+body main .notification-area .notification-box-content {
+  background-color: hsl(205deg, 33%, 90%);
+  width: 97.5%;
+  padding-left: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+}
+@media screen and (min-width: 768px) {
+  body main .notification-area .notification-box-content {
+    width: 88%;
+  }
+}
+body main .notification-area .notification-box-content .notification-box img {
+  height: 50px;
+  width: 50px;
+}
+body main .notification-area .notification-box-content .notification-box-2 {
+  width: 63%;
+  padding-top: 7px;
+  padding-bottom: 5px;
+}
+@media screen and (min-width: 768px) {
+  body main .notification-area .notification-box-content .notification-box-2 {
+    width: 88%;
+  }
+}
+body main .notification-area .notification-box-content .notification-box-2 p span {
+  color: hsl(224deg, 21%, 14%);
+  font-weight: bold;
+}
+body main fieldset {
+  width: 60%;
+  margin-left: 39%;
+  border: hsl(219deg, 14%, 63%) 1px solid;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  body main fieldset {
+    margin-left: 11%;
+    width: 78%;
+  }
+}
+body main fieldset p {
+  padding-left: 10px;
+  padding-right: 10px;
+}/*# sourceMappingURL=notify.css.map */
