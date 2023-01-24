@@ -36,7 +36,7 @@ function redDot() {
 }
 
 function removeDots(elem) {
-   const dot = elem.querySelector('#dot');
+   const dot = elem.querySelector('#dotg');
    dot.remove();
 }
 
