@@ -24,20 +24,9 @@
 // function click() {
 //    changeColor('white');
 // }
-const plural = document.querySelector('.plural');
 let count = 7;
-const unread = document.querySelectorAll('.notfication-box-content');
+const unread = document.querySelectorAll('.notification-box-content');
 const countSpan = document.querySelector('.count');
-
-function clicked() {
-   var elements = document.getElementsByClassName('notification-box-content'); // get all elements
-   for (var i = 0; i < elements.length; i++) {
-      elements[i].style.backgroundColor = "white";
-      countSpan.textContent = 0;
-   }
-   redDot();
-}
-
 
 function redDot() {
    var elements = document.getElementsByClassName('fa-sharp fa-solid fa-circle'); // get all elements
@@ -46,7 +35,10 @@ function redDot() {
    }
 }
 
-
+function removeDots(elem) {
+   const dot = elem.querySelector('#dot');
+   dot.remove();
+}
 
 function Mcount(count) {
    countSpan.textContent = count;
@@ -54,15 +46,18 @@ function Mcount(count) {
 
 unread.forEach(elem => {
    elem.addEventListener('click', () => {
-      elem.classList.remove('.notfication-box-content');
+      elem.classList.remove('notfication-box-content');
       removeDots(elem);
       count--;
       Mcount(count);
    })
 })
 
-
-function removeDots(elem) {
-   const dot = elem.querySelector('* > .fa-sharp fa-solid fa-circle');
-   dot.style.display = "none";
+function clicked() {
+   var elements = document.getElementsByClassName('notification-box-content'); // get all elements
+   for (var i = 0; i < elements.length; i++) {
+      elements[i].style.backgroundColor = "white";
+      countSpan.textContent = 0;
+   }
+   redDot();
 }
