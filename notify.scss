@@ -54,7 +54,11 @@ body {
                 justify-content: center;
                 align-items: center;
 
-                span {
+                .plural {
+                    color: hsl(224, 21%, 14%);
+                }
+
+                .count {
                     background-color: hsl(224, 63%, 24%);
                     width: 30px;
                     height: 27px;
@@ -133,6 +137,19 @@ body {
                             color: hsl(224, 21%, 14%);
                             font-weight: bold;
                         }
+
+                        span:hover {
+                            color: hsl(219, 85%, 26%);
+                        }
+
+                        .title {
+                            color: hsl(219, 14%, 63%);
+
+                        }
+
+                        .titlehover {
+                            color: hsl(219, 85%, 26%);
+                        }
                     }
                 }
             }
@@ -155,6 +172,12 @@ body {
                 padding-left: 10px;
                 padding-right: 10px;
             }
+        }
+
+        fieldset:hover {
+            cursor: pointer;
+            background-color: hsl(205, 33%, 90%);
+            color: hsl(220, 7%, 52%);
         }
     }
 }

@@ -58,7 +58,10 @@ body main nav h4 {
   justify-content: center;
   align-items: center;
 }
-body main nav h4 span {
+body main nav h4 .plural {
+  color: hsl(224deg, 21%, 14%);
+}
+body main nav h4 .count {
   background-color: hsl(224deg, 63%, 24%);
   width: 30px;
   height: 27px;
@@ -132,6 +135,15 @@ body main .notification-area .notification-box-content .notification-box-2 p spa
   color: hsl(224deg, 21%, 14%);
   font-weight: bold;
 }
+body main .notification-area .notification-box-content .notification-box-2 p span:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+body main .notification-area .notification-box-content .notification-box-2 p .title {
+  color: hsl(219deg, 14%, 63%);
+}
+body main .notification-area .notification-box-content .notification-box-2 p .titlehover {
+  color: hsl(219deg, 85%, 26%);
+}
 body main fieldset {
   width: 60%;
   margin-left: 39%;
@@ -148,4 +160,9 @@ body main fieldset {
 body main fieldset p {
   padding-left: 10px;
   padding-right: 10px;
+}
+body main fieldset:hover {
+  cursor: pointer;
+  background-color: hsl(205deg, 33%, 90%);
+  color: hsl(220deg, 7%, 52%);
 }/*# sourceMappingURL=notify.css.map */

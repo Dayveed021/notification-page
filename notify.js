@@ -17,18 +17,23 @@
 // });
 
 
-function changeColor(color) {
-   document.getElementsByClassName('notification-box-content').style.background = color;
-}
+// function changeColor(color) {
+//    document.getElementsByClassName('notification-box-content').style.background = color;
+// }
 
-function click() {
-   changeColor('white');
-}
+// function click() {
+//    changeColor('white');
+// }
+const plural = document.querySelector('.plural');
+let count = 7;
+const unread = document.querySelectorAll('.notfication-box-content');
+const countSpan = document.querySelector('.count');
 
 function clicked() {
    var elements = document.getElementsByClassName('notification-box-content'); // get all elements
    for (var i = 0; i < elements.length; i++) {
       elements[i].style.backgroundColor = "white";
+      countSpan.textContent = 0;
    }
    redDot();
 }
@@ -39,4 +44,25 @@ function redDot() {
    for (var i = 0; i < elements.length; i++) {
       elements[i].style.display = "none";
    }
+}
+
+
+
+function Mcount(count) {
+   countSpan.textContent = count;
+}
+
+unread.forEach(elem => {
+   elem.addEventListener('click', () => {
+      elem.classList.remove('.notfication-box-content');
+      removeDots(elem);
+      count--;
+      Mcount(count);
+   })
+})
+
+
+function removeDots(elem) {
+   const dot = elem.querySelector('* > .fa-sharp fa-solid fa-circle');
+   dot.style.display = "none";
 }
