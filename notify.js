@@ -1,31 +1,5 @@
-// function clicked() {
-//    const a = document.getElementsByClassName('notification-box-2').style.background;
-//    if (
-//     onclick = true
-//    ){
-//     a = 'white';
-//    }
-// };
-// const mar = document.getElementById('notification-box-2');
-
-// btn.addEventListener('click', function onClick(event) {
-//    // 👇️ change background color
-//    document.body.style.backgroundColor = 'white';
-
-//    // 👇️ optionally change text color
-//    // document.body.style.color = 'white';
-// });
-
-
-// function changeColor(color) {
-//    document.getElementsByClassName('notification-box-content').style.background = color;
-// }
-
-// function click() {
-//    changeColor('white');
-// }
 let count = 7;
-const unread = document.querySelectorAll('.notification-box-content');
+const unread = document.querySelectorAll('.notification-box-content-bg');
 const countSpan = document.querySelector('.count');
 
 function redDot() {
@@ -36,8 +10,12 @@ function redDot() {
 }
 
 function removeDots(elem) {
-   const dot = elem.querySelector('#dotg');
+   const dot = elem.querySelector('#dot');
    dot.remove();
+}
+function read(elem) {
+   const read = elem.querySelector('.title');
+   read.style.color = 'rgb(147, 157, 174)';
 }
 
 function Mcount(count) {
@@ -46,15 +24,16 @@ function Mcount(count) {
 
 unread.forEach(elem => {
    elem.addEventListener('click', () => {
-      elem.classList.remove('notfication-box-content');
+      elem.classList.remove('notification-box-content-bg');
       removeDots(elem);
+      read(elem);
       count--;
       Mcount(count);
    })
 })
 
 function clicked() {
-   var elements = document.getElementsByClassName('notification-box-content'); // get all elements
+   var elements = document.getElementsByClassName('notification-box-content-bg'); // get all elements
    for (var i = 0; i < elements.length; i++) {
       elements[i].style.backgroundColor = "white";
       countSpan.textContent = 0;

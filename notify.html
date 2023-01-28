@@ -21,12 +21,12 @@
 <body>
   <main>
     <nav>
-      <h4>Notification<span class="plural">s</span><span class="count">7</span> </h4>
+      <h4>Notifications<span class="count">7</span> </h4>
 
       <p onclick="clicked();">Mark all as read</p>
     </nav>
     <div class="notification-area">
-      <div class="notification-box-content">
+      <div id="notification-box-content" class="notification-box-content-bg" onclick="read();">
         <div class="notification-box">
           <img src="./assets/images/avatar-mark-webber.webp" alt="Loading">
         </div>
@@ -39,41 +39,43 @@
             <br>1m ago</br>
           </p>
         </div>
+
       </div>
-      <div class="notification-box-content">
+      <div id="notification-box-content" class="notification-box-content-bg">
         <div class="notification-box">
           <img src="./assets/images/avatar-angela-gray.webp">
         </div>
         <div class="notification-box-2">
           <p>
             <span>Angela Gray</span> followed you<i class="fa-sharp fa-solid fa-circle"
-              style="font-size: 7px;position:relative; top: -2px; left:10px; color: red;"  id="dot"></i>
+              style="font-size: 7px;position:relative; top: -2px; left:10px; color: red;" id="dot"></i>
             <br>5m ago</br>
           </p>
         </div>
+
       </div>
-      <div class="notification-box-content">
+      <div id="notification-box-content" class="notification-box-content-bg">
         <div class="notification-box">
           <img src="./assets/images/avatar-jacob-thompson.webp" alt="Loading">
         </div>
         <div class="notification-box-2">
           <p>
-            <span>Jacob Thompson</span> has joined your group <liken
-              style="color: hsl(224, 63%, 24%); font-weight: bold;">Chess Club </liken><i
-              class="fa-sharp fa-solid fa-circle"
+            <span>Jacob Thompson</span> has joined your group <span class="title" style="font-weight: bold;">Chess Club
+            </span><i class="fa-sharp fa-solid fa-circle"
               style="font-size: 7px;position:relative; top: -2px; left:10px; color: red;" id="dot"></i>
             <br>1 day ago</br>
           </p>
         </div>
+
       </div>
-      <div class="notification-box-content">
+      <div id="notification-box-content" class="notification-box-content-bg">
         <div class="notification-box">
           <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="Loading">
         </div>
         <div class="notification-box-2">
           <p>
             <span>Rizky Hasanuddin</span> sent you a private message<i class="fa-sharp fa-solid fa-circle"
-              style="font-size: 7px;position:relative; top: -2px; left:10px; color: red;"  id="dot"></i>
+              style="font-size: 7px;position:relative; top: -2px; left:10px; color: red;" id="dot"></i>
             <br>5 days ago</br>
           </p>
         </div>
@@ -82,42 +84,43 @@
         <p>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
           I'm already having lots of fun and improving my game.</p>
       </fieldset>
-      <div class="notification-box-content">
+      <div id="notification-box-content" class="notification-box-content-bg">
         <div class="notification-box">
           <img src="./assets/images/avatar-kimberly-smith.webp" alt="Loading">
         </div>
         <div class="notification-box-2">
           <p>
-            <span>Kimberly Smith</span> commented on your picture<i class="fa-sharp fa-solid fa-circle "
-              style="font-size: 7px;position:relative; top: -2px; left:10px; color: red;" id="dot"></i>
+            <span>Kimberly Smith</span> commented on your picture<i class="fa-sharp fa-solid fa-circle"
+              style="font-size: 7px; position:relative; top: -2px; left:10px; color: red;" id="dot"></i>
             <br>1 week ago</br>
           </p>
         </div>
         <img src="./assets/images/image-chess.webp" style="height: 50px; width:50px; padding-left: 20%;" alt="Loading">
       </div>
-
-      <div class="notification-box-content">
+      <div id="notification-box-content" class="notification-box-content-bg">
         <div class="notification-box">
           <img src="./assets/images/avatar-nathan-peterson.webp" alt="Loading">
         </div>
         <div class="notification-box-2">
           <p>
-            <span>Nathan Peterson</span> reacted to your recent post <like style="font-weight: bold;">5 end-game
-              strategies to increase your win rate</like><i class="fa-sharp fa-solid fa-circle"
-              style="font-size: 7px;position:relative; top: -2px; left:10px; color: red;"  id="dot"></i>
+            <span>Nathan Peterson</span> reacted to your recent post <span class="title" style="font-weight: bold;">5
+              end-game
+              strategies to increase your win rate</span><i class="fa-sharp fa-solid fa-circle"
+              style="font-size: 7px;position:relative; top: -2px; left:10px; color: red;" id="dot"></i>
             <br>2 weeks ago</br>
           </p>
         </div>
       </div>
-      <div class="notification-box-content">
+      <div id="notification-box-content" class="notification-box-content-bg">
         <div class="notification-box">
           <img src="./assets/images/avatar-anna-kim.webp" alt="Loading">
         </div>
         <div class="notification-box-2">
           <p>
-            <span>Anna Kim</span> left the group <liken style="color: hsl(224, 63%, 24%); font-weight: bold;">Chess Club
-            </liken><i class="fa-sharp fa-solid fa-circle"
-              style="font-size: 7px;position:relative; top: -2px; left:10px; color: red;"  id="dot"></i>
+            <span>Anna Kim</span> left the group <span class="title" style="font-weight: bold;">Chess
+              Club
+            </span><i class="fa-sharp fa-solid fa-circle"
+              style="font-size: 7px;position:relative; top: -2px; left:10px; color: red;" id="dot"></i>
             <br>2 weeks ago</br>
           </p>
         </div>

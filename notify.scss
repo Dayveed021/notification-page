@@ -1,7 +1,7 @@
 * {
     padding: 0px;
     margin: 0px;
-    color: hsl(219, 14%, 63%);
+    color: rgb(147, 157, 174);
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
@@ -100,8 +100,7 @@ body {
             align-items: center;
             padding-bottom: 30px;
 
-            .notification-box-content {
-                background-color: hsl(205, 33%, 90%);
+            #notification-box-content {
                 width: 97.5%;
                 padding-left: 10px;
                 border-radius: 5px;
@@ -143,11 +142,6 @@ body {
                         }
 
                         .title {
-                            color: hsl(219, 14%, 63%);
-
-                        }
-
-                        .titlehover {
                             color: hsl(219, 85%, 26%);
                         }
                     }
@@ -179,5 +173,9 @@ body {
             background-color: hsl(205, 33%, 90%);
             color: hsl(220, 7%, 52%);
         }
+    }
+
+    .notification-box-content-bg {
+        background-color: hsl(205, 33%, 90%);
     }
 }

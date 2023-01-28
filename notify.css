@@ -1,7 +1,7 @@
 * {
   padding: 0px;
   margin: 0px;
-  color: hsl(219deg, 14%, 63%);
+  color: rgb(147, 157, 174);
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
@@ -100,8 +100,7 @@ body main .notification-area {
   align-items: center;
   padding-bottom: 30px;
 }
-body main .notification-area .notification-box-content {
-  background-color: hsl(205deg, 33%, 90%);
+body main .notification-area #notification-box-content {
   width: 97.5%;
   padding-left: 10px;
   border-radius: 5px;
@@ -113,35 +112,32 @@ body main .notification-area .notification-box-content {
   gap: 10px;
 }
 @media screen and (min-width: 768px) {
-  body main .notification-area .notification-box-content {
+  body main .notification-area #notification-box-content {
     width: 88%;
   }
 }
-body main .notification-area .notification-box-content .notification-box img {
+body main .notification-area #notification-box-content .notification-box img {
   height: 50px;
   width: 50px;
 }
-body main .notification-area .notification-box-content .notification-box-2 {
+body main .notification-area #notification-box-content .notification-box-2 {
   width: 63%;
   padding-top: 7px;
   padding-bottom: 5px;
 }
 @media screen and (min-width: 768px) {
-  body main .notification-area .notification-box-content .notification-box-2 {
+  body main .notification-area #notification-box-content .notification-box-2 {
     width: 88%;
   }
 }
-body main .notification-area .notification-box-content .notification-box-2 p span {
+body main .notification-area #notification-box-content .notification-box-2 p span {
   color: hsl(224deg, 21%, 14%);
   font-weight: bold;
 }
-body main .notification-area .notification-box-content .notification-box-2 p span:hover {
+body main .notification-area #notification-box-content .notification-box-2 p span:hover {
   color: hsl(219deg, 85%, 26%);
 }
-body main .notification-area .notification-box-content .notification-box-2 p .title {
-  color: hsl(219deg, 14%, 63%);
-}
-body main .notification-area .notification-box-content .notification-box-2 p .titlehover {
+body main .notification-area #notification-box-content .notification-box-2 p .title {
   color: hsl(219deg, 85%, 26%);
 }
 body main fieldset {
@@ -165,4 +161,7 @@ body main fieldset:hover {
   cursor: pointer;
   background-color: hsl(205deg, 33%, 90%);
   color: hsl(220deg, 7%, 52%);
+}
+body .notification-box-content-bg {
+  background-color: hsl(205deg, 33%, 90%);
 }/*# sourceMappingURL=notify.css.map */
