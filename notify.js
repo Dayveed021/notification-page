@@ -15,9 +15,12 @@ function removeDots(elem) {
 }
 
 function read(elem) {
-   const read = elem.querySelector('.title');
-   read.style.color = 'rgb(147, 157, 174)';
-}
+   if (elem.querySelector(".title")) {
+     var read = elem.querySelector(".title");
+     read.style.color = "rgb(147, 157, 174)";
+   }
+ }
+ 
 function readAll() {
    var elements = document.getElementsByClassName('title'); // get all elements
    for (var i = 0; i < elements.length; i++) {
