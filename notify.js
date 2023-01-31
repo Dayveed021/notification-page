@@ -44,7 +44,7 @@ function clicked() {
    for (var i = 0; i < elements.length; i++) {
       elements[i].style.backgroundColor = "white";
       countSpan.textContent = 0;
-      readAll()
+      readAll();
    }
    redDot();
 }
