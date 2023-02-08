@@ -1,6 +1,7 @@
-let count = 7;
 const unread = document.querySelectorAll('.notification-box-content-bg');
 const countSpan = document.querySelector('.count');
+let count = unread.length;
+document.getElementById('count').innerHTML = count;
 
 function redDot() {
    var elements = document.getElementsByClassName('fa-sharp fa-solid fa-circle'); // get all elements
@@ -16,11 +17,11 @@ function removeDots(elem) {
 
 function read(elem) {
    if (elem.querySelector(".title")) {
-     var read = elem.querySelector(".title");
-     read.style.color = "rgb(147, 157, 174)";
+      var read = elem.querySelector(".title");
+      read.style.color = "rgb(147, 157, 174)";
    }
- }
- 
+}
+
 function readAll() {
    var elements = document.getElementsByClassName('title'); // get all elements
    for (var i = 0; i < elements.length; i++) {
@@ -28,9 +29,12 @@ function readAll() {
    }
 }
 
-function Mcount(count) {
-   countSpan.textContent = count;
-}
+// function Mcount(count, specifiedCount) {
+//    countSpan.textContent = specifiedCount !== undefined ? specifiedCount : count;
+// }
+// function Mcount(count) {
+//    countSpan.textContent = count;
+// }
 
 unread.forEach(elem => {
    elem.addEventListener('click', () => {
@@ -38,7 +42,8 @@ unread.forEach(elem => {
       removeDots(elem);
       read(elem);
       count--;
-      Mcount(count);
+      // // Mcount(count);
+      document.getElementById('count').innerHTML = count;
    })
 })
 
@@ -46,8 +51,9 @@ function clicked() {
    var elements = document.getElementsByClassName('notification-box-content-bg'); // get all elements
    for (var i = 0; i < elements.length; i++) {
       elements[i].style.backgroundColor = "white";
-      countSpan.textContent = 0;
       readAll();
+      count = 0
+      document.getElementById('count').innerHTML = count;
    }
    redDot();
 }

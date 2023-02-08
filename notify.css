@@ -1,7 +1,7 @@
-* {
-  padding: 0px;
+*{
   margin: 0px;
-  color: rgb(147, 157, 174);
+  padding: 0px;
+  box-sizing: 0px;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
@@ -61,7 +61,7 @@ body main nav h4 {
 body main nav h4 .plural {
   color: hsl(224deg, 21%, 14%);
 }
-body main nav h4 .count {
+body main nav h4 #count {
   background-color: hsl(224deg, 63%, 24%);
   width: 30px;
   height: 27px;
